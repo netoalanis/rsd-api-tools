@@ -73,7 +73,7 @@ router.delete('/:id', function(req, res) {
   const found = asignaciones.some(asignacion => asignacion.id === parseInt(req.params.id));
 
   if (found) {
-    asignaciones.splice(asignaciones.findIndex(asignacion => asignacion.id === parseInt(req.params.id),1);
+    asignaciones.splice(asignaciones.findIndex(asignacion => asignacion.id === parseInt(req.params.id),1));
     res.json({
       msg: 'Asignacion borrada',
       //asignaciones: asignaciones.filter(asignacion => asignacion.id !== parseInt(req.params.id))
